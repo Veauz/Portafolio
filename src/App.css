@@ -1,0 +1,331 @@
+.barra,
+main,
+footer {
+  width: min(1100px, 90%);
+  margin-inline: auto;
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #29332e;
+}
+
+.marca {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.marca span {
+  color: #b5f77c;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 14px;
+  color: #bdc8c0;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #b5f77c;
+}
+
+.portada {
+  padding: 100px 0 40px;
+}
+
+.etiqueta {
+  color: #b5f77c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 24px 0;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+h1 span {
+  color: #b5f77c;
+}
+
+.portada > p {
+  max-width: 610px;
+  margin-bottom: 30px;
+  color: #bdc8c0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.boton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 22px;
+  border: 1px solid #b5f77c;
+  border-radius: 9px;
+  background: #b5f77c;
+  color: #14200e;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+  background: #ccffa0;
+  transform: translateY(-2px);
+}
+
+.secundario {
+  background: transparent;
+  border-color: #526057;
+  color: #edf4ef;
+}
+
+.secundario:hover {
+  background: #28332c;
+}
+
+.datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #29332e;
+  color: #a7b5ac;
+  font-size: 13px;
+}
+
+.seccion {
+  padding: 64px 0;
+  scroll-margin-top: 24px;
+}
+
+h2 {
+  margin: 16px 0 28px;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -1px;
+}
+
+.descripcion {
+  max-width: 760px;
+  color: #bdc8c0;
+  line-height: 1.9;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.tecnologias span {
+  padding: 7px 12px;
+  border: 1px solid #39473e;
+  border-radius: 6px;
+  color: #cbd8cf;
+  font-size: 12px;
+}
+
+.proyecto {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  overflow: hidden;
+  border: 1px solid #344239;
+  border-radius: 18px;
+  background: #18221c;
+}
+
+.visual-pokedex {
+  min-height: 380px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #d9edc6;
+  color: #284127;
+}
+
+.rotulo,
+.numero-proyecto {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pokebola {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border: 8px solid #24352b;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    #ee6659 0%,
+    #ee6659 46%,
+    #24352b 46%,
+    #24352b 54%,
+    #fffdf3 54%,
+    #fffdf3 100%
+  );
+  transform: rotate(-15deg);
+  box-shadow: 12px 18px 0 #28412720;
+}
+
+.centro-pokebola {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 58px;
+  height: 58px;
+  border: 8px solid #24352b;
+  border-radius: 50%;
+  background: #fffdf3;
+  transform: translate(-50%, -50%);
+}
+
+.contenido-proyecto {
+  padding: 36px;
+}
+
+.contenido-proyecto h3 {
+  margin: 14px 0;
+  font-size: 34px;
+}
+
+.contenido-proyecto p,
+.tarjeta p {
+  color: #bdc8c0;
+  line-height: 1.75;
+}
+
+.detalle {
+  margin: 24px 0;
+}
+
+.detalle h4 {
+  margin-bottom: 8px;
+}
+
+.detalle p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.aprendizajes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tarjeta {
+  padding: 28px;
+  border: 1px solid #344239;
+  border-radius: 14px;
+  background: #18221c;
+}
+
+.numero {
+  color: #b5f77c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tarjeta h3 {
+  margin-top: 24px;
+  font-size: 19px;
+}
+
+.tarjeta p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 28px 0;
+  border-top: 1px solid #29332e;
+  color: #a7b5ac;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .barra {
+    align-items: flex-start;
+  }
+
+  nav {
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .portada {
+    padding-top: 64px;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+  }
+
+  .proyecto,
+  .aprendizajes {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-pokedex {
+    min-height: 320px;
+  }
+
+  .contenido-proyecto {
+    padding: 26px;
+  }
+
+  .seccion {
+    padding: 44px 0;
+  }
+}
+.proyecto-mercagaming {
+  margin-top: 28px;
+}
+
+.visual-gaming {
+  min-height: 320px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: radial-gradient(circle, #513582, #21172f);
+  color: #e4d3ff;
+  text-align: center;
+}
+
+.icono-gaming {
+  font-size: 120px;
+  line-height: 1.3;
+}
